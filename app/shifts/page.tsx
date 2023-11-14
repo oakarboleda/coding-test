@@ -1,21 +1,14 @@
 'use client';
-
+// here i would have made sure my api was working but i ran out of time. So it's jst fake data
 import {
-  Card,
-  Metric,
-  Text,
-  Title,
-  BarList,
-  Flex,
-  Grid,
   Table,
   TableHead,
-  TableBody,
   TableRow,
   TableHeaderCell,
-  TableCell
+  TableBody,
+  TableCell,
+  Text
 } from '@tremor/react';
-
 const data = [
   {
     id: 1,
@@ -60,8 +53,15 @@ const data = [
   },
 ];
 
-export default function ShiftPage() {
 
+interface Shifts {
+  id: number;
+  start_time: string;
+  end_time: string;
+  last_login: string;
+  job_location: string;
+}
+export default function ShiftPage() {
   return (
     <main className="p-4 md:p-10 mx-auto max-w-7xl">
       <Table>
