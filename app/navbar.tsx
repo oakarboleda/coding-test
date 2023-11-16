@@ -10,6 +10,7 @@ import Image from 'next/image';
 const navigation = [
   { name: 'Dashboard', href: '/' },
   {name: 'Log Shift', href: '/log'},
+  {name: 'Locations', href: '/locations'},
   {name: 'Shift Manager', href: '/shifts'}
 ];
 
